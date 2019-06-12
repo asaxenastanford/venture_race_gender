@@ -16,11 +16,11 @@ javasheetread = wbJ.sheet_by_index(0)
 for r in range(2, 1668):
 	firstName = javasheetread.cell_value(r,0)
 	lastName = javasheetread.cell_value(r,1)
-	name = firstName + lastName #"Investor"
+	name = firstName + lastName 
 	name = name.replace(" ", "")
 	name = name.replace("\'", "")
 	print("Name: " + name)
-	command = 'python image_scrape.py --search ' + name + ' --num_images 5' 
+	command = 'python image_scrape_google.py --search ' + name + ' --num_images 5' 
 	run(command)
 
 
