@@ -23,9 +23,7 @@ total = javasheetread.cell_value(0, 3)
 totalNumber = round(total)
 api_string = "df689b8f770275905ab667f3ed4b3191"
 
-#1677
-#3763
-for r in range(29927,32046):
+for r in range(2,32046):
 	firstName = sheet.cell_value(r,1)
 	lastName = sheet.cell_value(r,2)
 	result = (Genderize(api_key = api_string).get([firstName]))
