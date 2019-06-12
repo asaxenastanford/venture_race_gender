@@ -9,10 +9,10 @@ excelFile = '/Users/aakankshasaxena/Documents/Sophomore/Strebulaev/genderize/Ven
 wb = xlrd.open_workbook(excelFile) 
 sheet = wb.sheet_by_index(0) #read
 xfile = openpyxl.load_workbook('/Users/aakankshasaxena/Documents/Sophomore/Strebulaev/genderize/Venture_Capital_List_Mod.xlsx')
-sheet2 = xfile['Sheet1'] #xfile.get_sheet_by_name('Sheet1') #write
+sheet2 = xfile['Sheet1'] #write
 
 xfile1 = openpyxl.load_workbook('/Users/aakankshasaxena/Documents/Sophomore/Strebulaev/genderize/names_to_run.xlsx')
-javasheetwrite = xfile1['Sheet1'] #xfile.get_sheet_by_name('Sheet1')
+javasheetwrite = xfile1['Sheet1'] 
 javaFile = '/Users/aakankshasaxena/Documents/Sophomore/Strebulaev/genderize/names_to_run.xlsx'
 wbJ = xlrd.open_workbook(javaFile)
 javasheetread = wbJ.sheet_by_index(0)
